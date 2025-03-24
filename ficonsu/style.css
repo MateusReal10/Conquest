@@ -992,7 +992,7 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
 /* Header opacity */
 .header-style-1.header-opacity #site-header,
 .header-style-2.header-opacity #site-header .wrap-themesflat-container { background-color: white;
-height: 140px; }
+height: 180px; }
 
 /* Header Search */
 #site-header #header-search { position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); transform: translateY(-50%); }
