@@ -61,7 +61,7 @@
                     <div class="wrap-inner">
                         <div id="site-logo" class="clearfix">
                             <div id="site-logo-inner">
-                                <a href="#" title="Finance" rel="home" class="main-logo"><img src="imagens/Conquest-logo-azul-fundobranco.svg" width="150" height="40" alt="Finance" data-retina="imagens/Conquest-logo-azul-fundobranco.svg" data-width="184" data-height="40"></a>
+                                <a href="#" title="Conquest" rel="home" class="main-logo"><img src="imagens/Conquest-logo-azul-fundobranco.svg" width="150" height="40" alt="Conquest" data-retina="imagens/Conquest-logo-azul-fundobranco.svg" data-width="184" data-height="40"></a>
                             </div>
                         </div><!-- /#site-logo -->
 
@@ -69,7 +69,7 @@
 
                         <nav id="main-nav" class="main-nav">
                             <ul id="menu-primary-menu" class="menu">
-                                <li class="menu-item current-menu-item menu-item-has-children"><a href="home-3.html">HOME</a>
+                                <li class="menu-item current-menu-item menu-item-has-children"><a href="index.html">HOME</a>
                                     
                                 </li>
 
@@ -311,13 +311,9 @@
                                         <div class="themesflat-spacer clearfix" data-desktop="0" data-mobi="40" data-smobi="40"></div>
                                     </div><!-- /.col-md-6 -->
 
-                                    <div class="col-md-6 half-background style-2">
-                                        <div class="themesflat-icon style-1 clearfix background">
-                                           
-                                        </div><!-- /.themesflat-icon -->
-                                    </div><!-- /.col-md-6 -->
+                                   
                                 </div>
-                                <div class="themesflat-spacer clearfix" data-desktop="80" data-mobi="60" data-smobi="60"></div>
+                                
                             </div>
                         </div>
                         <!-- END VIDEO -->
@@ -424,83 +420,109 @@
                         <!-- END SERVICES POST CAROUSEL -->  
 
                          <!-- GALLERY -->
-                        <div id="nossotime" class="row-gallery">
+                         <div id="nossotime" class="row-gallery">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="themesflat-spacer clearfix" data-desktop="83" data-mobi="60" data-smobi="60"></div>
-
+                        
                                         <div class="themesflat-headings style-1 clearfix">
                                             <h2 class="heading clearfix">NOSSO TIME</h2>
                                             <div class="sep clearfix"></div>
                                         </div><!-- /.themesflat-headings -->
-
+                        
                                         <div class="themesflat-spacer clearfix" data-desktop="39" data-mobi="40" data-smobi="40"></div>
-
-                                        <div class="themesflat-gallery has-arrows w32 arrows-circle arrow-top arrow30" data-auto="false" data-column="3" data-column2="2" data-column3="1" data-gap="30"><div class="owl-carousel owl-theme">
+                        
+                                        <!-- Use Flexbox para alinhar as imagens -->
+                                        <div class="gallery-container">
                                             <div class="gallery-box">
                                                 <div class="inner">
                                                     <div class="hover-effect">
                                                         <div class="gallery-image">
                                                             <img src="imagens/Romenia.png" alt="Image">
                                                         </div>
-
-                                                        <div class="text">
-                                                            <div class="icon">
-                                                                
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div><!-- /.gallery-box -->
-
+                        
                                             <div class="gallery-box">
                                                 <div class="inner">
                                                     <div class="hover-effect">
                                                         <div class="gallery-image">
                                                             <img src="imagens/Wanessa.png" alt="Image">
                                                         </div>
-
-                                                       
                                                     </div>
                                                 </div>
                                             </div><!-- /.gallery-box -->
-
+                        
                                             <div class="gallery-box">
                                                 <div class="inner">
                                                     <div class="hover-effect">
                                                         <div class="gallery-image">
                                                             <img src="imagens/Geane Carvalho.png" alt="Image">
                                                         </div>
-
-                                                        <div class="text">
-                                                            <div class="icon">
-                                                                
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div><!-- /.gallery-box -->
-
+                        
                                             <div class="gallery-box">
                                                 <div class="inner">
                                                     <div class="hover-effect">
                                                         <div class="gallery-image">
                                                             <img src="imagens/Edvando-Fernandes.png" alt="Image">
                                                         </div>
-
-                                                        <div class="text">
-                                                            <div class="icon">
-                                                                
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div><!-- /.gallery-box -->
+                                        </div><!-- /.gallery-container -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                           <!-- /.gallery-box -->
+                        <!--Definir o estilo para o contêiner das imagens  --> 
+                        <style>
+                       /* Estilos para o contêiner das imagens */
+.gallery-container {
+    display: flex; /* Usando flexbox para alinhamento horizontal */
+    justify-content: space-between; /* Espaço entre os itens */
+    gap: 20px; /* Espaço entre as imagens */
+    flex-wrap: wrap; /* Para garantir que as imagens se ajustem responsivamente */
+}
 
-                                        </div><!-- /.themesflat-gallery -->
+/* Estilos para cada caixa de imagem */
+.gallery-box {
+    width: 23%; /* Largura padrão para telas grandes */
+    box-sizing: border-box; /* Incluir o padding e bordas no cálculo da largura */
+}
+
+.gallery-image img {
+    width: 100%; /* Garantir que as imagens ocupem toda a largura do seu contêiner */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+/* Responsividade para telas médias */
+@media (max-width: 1024px) {
+    .gallery-box {
+        width: 48%; /* Para telas médias, exibe 2 imagens por linha */
+    }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .gallery-box {
+        width: 100%; /* Para telas pequenas, exibe 1 imagem por linha */
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    .gallery-box {
+        width: 100%; /* Para dispositivos móveis, exibe 1 imagem por linha */
+    }
+}
+
+                    </style>                   
 
                                         <div class="themesflat-spacer clearfix" data-desktop="52" data-mobi="40" data-smobi="40"></div>
 
@@ -534,8 +556,7 @@
                                     </div><!-- /.col-md-4 -->
 
                                     <div class="col-md-12">
-                                        <div class="themesflat-spacer clearfix" data-desktop="80" data-mobi="60" data-smobi="60"></div>
-                                    </div><!-- /.col-md-12 -->
+                                        <!-- /.col-md-12 -->
                                 </div><!-- /.row -->
                             </div><!-- /.container -->
                         </div>
